@@ -5,16 +5,21 @@
 Ruby version:2.7.2
 
 $ bundle install --without production
+
 Yarnというプログラムをダウンロードします。
 
 $ source <(curl -sL https://cdn.learnenough.com/yarn_install)
+
 エラーが出る場合にはメッセージの指示に従って下記を実行します。
 
 $ yarn install --check-files
+
 その後、データベースへのマイグレーションを実行します。
 
 $ rails db:migrate
 
+
 サーバーを立ち上げてください。
+
 $ rails server
 
