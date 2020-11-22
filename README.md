@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+使い方
+このアプリケーションを動かす場合は、まずはリポジトリを手元にクローンしてください。 その後、次のコマンドで必要になる RubyGems をインストールします。
+Ruby version:2.7.2
 
-Things you may want to cover:
+$ bundle install --without production
+Yarnというプログラムをダウンロードします。
 
-* Ruby version
+$ source <(curl -sL https://cdn.learnenough.com/yarn_install)
+エラーが出る場合にはメッセージの指示に従って下記を実行します。
 
-* System dependencies
+$ yarn install --check-files
+その後、データベースへのマイグレーションを実行します。
 
-* Configuration
+$ rails db:migrate
+最後に、テストを実行してうまく動いているかどうか確認してください。
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+$ rails server
+c9コマンドを使うには
